@@ -31,13 +31,13 @@ class ViewController: UIViewController {
             
             self.presentViewController(facebookSheet, animated: true, completion: nil)
         } else {
-            var alert = UIAlertController(title: "Information", message: "Nenhuma conta do Facebook activa! Por favor conectar-se ao Facebook em Definições -> Facebook e tentar novamente!", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Information", message: "None account active! Definitions -> Facebook and try again!", preferredStyle: UIAlertControllerStyle.Alert)
             self.presentViewController(alert, animated: true, completion: nil)
             
-            alert.addAction(UIAlertAction(title: "Fechar", style: .Default, handler: { action in
+            alert.addAction(UIAlertAction(title: "Close", style: .Default, handler: { action in
                 switch action.style{
                 case .Default:
-                    print("fechei")
+                    print("closed")
                     
                 case .Cancel:
                     println("cancel")
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Help", style: .Default, handler: { action in
                 switch action.style{
                 case .Default:
-                    let url : NSURL = NSURL(string: "http://appmobiles.paroquiasvitoria-amaro.com/ajuda_configurar_facebook.php")!
+                    let url : NSURL = NSURL(string: "https://github.com/rudiluis/Swift-iOS-AddContact/blob/master/README.md")!
                     UIApplication.sharedApplication().openURL(url);
                     
                 case .Cancel:
