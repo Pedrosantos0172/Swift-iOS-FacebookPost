@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Help", style: .Default, handler: { action in
                 switch action.style{
                 case .Default:
-                    let url : NSURL = NSURL(string: "https://github.com/rudiluis/Swift-iOS-AddContact/blob/master/README.md")!
+                    let url : NSURL = NSURL(string: "https://github.com/rudiluis/Swift-iOS-FacebookPost/blob/master/README.md")!
                     UIApplication.sharedApplication().openURL(url);
                     
                 case .Cancel:
